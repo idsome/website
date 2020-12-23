@@ -8,5 +8,8 @@ def hello_world():
 @app.route('/register')
 def nice():
     return render_template("register.html")
+@app.route('/')
+def main():
+    return render_template("main page.html")
 if __name__ == "__main__":
     app.run(debug = True)
