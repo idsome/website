@@ -1,10 +1,66 @@
-header , footer { background-color:whitesmoke; color: black; padding: 10px; margin: 10px;}
-nav { margin: 0px 15px 0px 15px; background-color; padding: 10px; display:flex; align-items:center }
-div {background-color; width: fit-content; display: inline-block;}
+ * {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+
+header , footer { background-color:whitesmoke;  padding: 10px;}
+nav { margin: 0px 15px 0px 15px; background-color:rgb(116, 115, 124); padding: 10px; ;}
+.div {background-color; width: fit-content; display: inline-block;}
 
 ul { list-style-type: none; background-color: ; display: inline-block; margin: 10px;}
 li { background-color: ; width: fit-content; display: inline-block; margin: 0px 10px 0px 10px;}
 li:hover{ color:chocolate}
-a { text-decoration: none; color:black ;}
+a { text-decoration: none; color: black;}
 a:hover{color: chocolate;}
 
+.container {
+	max-width: 1400px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.main-paner {
+	width: 75%;
+	height: 500px;
+	background-color:whitesmoke;
+	float: left;
+	
+
+	
+}
+
+.right-paner {
+	width: 25%;
+	height: 500px;
+	background-color: black;
+	float: right;
+}
+
+.img_show {
+	display: grid;
+	grid-template-columns: 4 1fr;
+	grid-column: 2/3;
+	background-color: whitesmoke;
+	margin-bottom: 15px;
+}
+.main-content {
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr ;
+	column-gap: 5px;
+	row-gap: 5px;
+}
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: 2px solid black;
+	max-height:200px ;
+	max-width: 400px;
+	padding:0px ;
+	font-size: 70%;
+	background-color:rgb(138, 139, 21);
+	font-weight: bold;
+	color:rgb(70, 0, 0);
+	
+}
